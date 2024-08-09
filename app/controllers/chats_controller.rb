@@ -21,15 +21,17 @@ class ChatsController < ApplicationController
 
   # POST /chats or /chats.json
   def create
-    @chat = Chat.new(chat_params)
+    @chat = Chat.new(user_id: current_user.id)
 
     respond_to do |format|
       if @chat.save
         format.html { redirect_to chat_url(@chat), notice: "Chat was successfully created." }
         format.json { render :show, status: :created, location: @chat }
+        format.turbo_stream
       else
         format.html { render :new, status: :unprocessable_entity }
         format.json { render json: @chat.errors, status: :unprocessable_entity }
+        format.turbo_stream
       end
     end
   end
