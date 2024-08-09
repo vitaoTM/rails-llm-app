@@ -75,3 +75,5 @@ gem "devise", "~> 4.9"
 
 gem "annotate", "~> 3.2", :group => :development
 gem "letter_opener", "~> 1.10", :group => :development
+
+gem "dotenv-rails", "~> 3.1", :groups => [:development, :test]
