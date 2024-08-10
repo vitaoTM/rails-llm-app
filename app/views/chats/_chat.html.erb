@@ -1,17 +1,17 @@
-<div id="<%= dom_id chat %>">
-  <p>
-    <strong>User:</strong>
-    <%= chat.user_id %>
-  </p>
+<turbo-frame id="current-chat">
+  <%#= turbo_stream_from "#{dom_id(chat)}_messages" %>
 
-  <p>
-    <strong>History:</strong>
-    <%= chat.history %>
-  </p>
+  <div id="<%= dom_id chat %>" class="container-fluid vh-75">
+  </div>
 
-  <p>
-    <strong>Q a:</strong>
-    <%= chat.q_a %>
-  </p>
-
-</div>
+  <%= form_with(model: chat) do |form| %>
+    <div class="input-gruop mb-3">
+      <%= form.text_field :content, placeholder: "Send a message", class: 'form-control' %>
+        <button class="btn btn-outline-secondary btn-sm" type="submit" id="button-addon2">
+        <i class="fa-regular fa-paper-plane"></i>
+        Send
+      </button>
+    </div>
+  <% end %>
+  </div>
+</turbo-frame>
