@@ -1,8 +1,6 @@
 class Chat < ApplicationRecord
   belongs_to :user
 
-  attr_accessor :message
-
   def message=(message)
     self.history = { 'prompt' => message, 'history' => [] } if history.blank?
 
