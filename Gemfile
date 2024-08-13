@@ -81,3 +81,5 @@ gem "dotenv-rails", "~> 3.1", :groups => [:development, :test]
 gem "ruby-openai", "~> 7.1"
 
 gem "sidekiq", "~> 7.3"
+
+gem "redis", "~> 5.2"
