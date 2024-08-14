@@ -11,8 +11,8 @@ class OpenaiResponseJob < ApplicationJob
 
     OpenAI::Client.new.chat(
       parameters: {
-        model: 'gtp-3.5-turbo',
-        messages: chat.message.map { |m| { role: m.role, content: m.content } },
+        model: 'gpt-3.5-turbo',
+        messages: chat.messages.map { |m| { role: m.role, content: m.content } },
         temperature: 0.7,
         max_tokens: 500,
         top_p: 1,
