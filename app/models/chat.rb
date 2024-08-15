@@ -18,7 +18,7 @@ class Chat < ApplicationRecord
 
     response_raw = client.chat(
       parameters: {
-        model: 'gtp-3.5-turbo',
+        model: 'gpt-3.5-turbo',
         messages:,
         temperature: 0.7,
         max_tokens: 500,
