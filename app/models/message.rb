@@ -18,7 +18,7 @@ class Message < ApplicationRecord
     broadcast_append_to(
       "#{dom_id(chat)}_messages",
       partial: 'messages/message',
-      locals: { message: self, scroll_to: true },
+      locals: { message: self, scroll_to: false },
       target: "#{dom_id(chat)}_messages"
     )
   end
