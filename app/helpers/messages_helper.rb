@@ -6,7 +6,7 @@ module MessagesHelper
     when 'user'
       '<i class="fa-duotone fa-user"></i>'
     when 'assistant'
-      '<i class="f-duotone fa-microchip"></i>'
+      '<i class="fa-duotone fa-microchip-ai"></i>'
     end
   end
 end
