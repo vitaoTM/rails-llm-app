@@ -1,7 +1,7 @@
 class MessagesController < ApplicationController
   def create
     @chat = Chat.find(params[:chat_id])
-    role = @chat.messages.any? ? 'user ' : 'system'
+    role = @chat.messages.any? ? 'user' : 'system'
     @message = @chat.messages.create!(message_params.merge(role: role))
 
     OpenaiResponseJob.perform_later(@chat.id)

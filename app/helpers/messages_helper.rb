@@ -4,9 +4,9 @@ module MessagesHelper
     when 'system'
       '<i class="fa-duotone fa-star"></i>'
     when 'user'
-      '<i> class="fa-duotone fa-user"></i>'
+      '<i class="fa-duotone fa-user"></i>'
     when 'assistant'
-      '<i class="f-duotone fa-microchip-ai"></i>'
+      '<i class="f-duotone fa-microchip"></i>'
     end
   end
 end
