@@ -2,7 +2,7 @@
   <%= turbo_stream_from "#{dom_id(chat)}_messages" %>
   <div id="<%= dom_id chat %>" class="container-fluid vh-75">
     <div id="<%= dom_id(@chat) %>_messages" class="h-100">
-      <%= render chat.messages %>
+      <%= render chat.messages.order(:id) %>
     </div>
   </div>
 
