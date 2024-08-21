@@ -17,7 +17,7 @@ This project is an attempt to develop a chatbot app, using Ruby on Rails and an 
 
 ### GEMS used other than rails daefault:
 - Note: to install these gems `cd` into your app directory and run those install commands
-- Obs: When creating a new rails project you can set your DataBase to the one you want, default is SQLite, to set postgreSQL or other you should add the flag `--database=DB_YOU_WANT_TOU_SE` .
+- Obs: When creating a new rails project you can set your DataBase to the one you want, default is SQLite, to set postgreSQL or other you should add the flag `--database=DB_YOU_WANT_TO_USE` .
 
 <div align="center">
 
@@ -44,6 +44,6 @@ OPENAI_API_KEY=sk=xxxxxxxxxxxxx
 ```
 
 Note: save your API KEY in a safe place do not share it, also OPENAI does not let you copy your key a second time.
-Then into your app directory and run `echo "/ .env" >> .gitignore"`, this will ensure your your environment configurations does not go to your public repository.
+Then into your app directory and run `echo "/ .env" >> .gitignore"`, this will ensure your environment configurations does not go to your public repository.
 
 ///// construction in progress /////
