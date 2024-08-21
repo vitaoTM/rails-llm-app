@@ -6,23 +6,23 @@ This project is an attempt to develop a chatbot app, using Ruby on Rails and an 
 
 <div align="center">
 
-|  System  | Version |
-|----------|---------|
-| `ruby -v`|`3.3.0`  |
-|`rails -v`|`7.0.8.4`|
-|`redis-cli -v`| `6.0.16` |
-| `psql -V`| `14.12` |
+|System|  Install Command  | Version |
+|:------|:-------------------:|:---------:|
+|[ruby](https://www.ruby-lang.org/en/documentation/installation/)| `ruby -v`|`3.3.0`  |
+|rails|`rails -v`|`7.0.8.4`|
+|[redis](https://redis.io/docs/latest/operate/oss_and_stack/install/install-redis/)|`redis-cli -v`| `6.0.16` |
+|[postgreSQL](https://www.postgresql.org/download/)| `psql -V`| `14.12` |
 
 </div>
 
 ### GEMS used other than rails daefault:
-- Note: to install these gems `cd` into your app directory and run those commands
+- Note: to install these gems `cd` into your app directory and run those install commands
 - Obs: When creating a new rails project you can set your DataBase to the one you want, default is SQLite, to set postgreSQL or other you should add the flag `--database=DB_YOU_WANT_TOU_SE` .
 
 <div align="center">
 
-|  Gem  | Install | Gem Version |
-|-------|-----|---------|
+|  Gem  | Install Command | Gem Version |
+|-------|-----------------|:-------------:|
 | [devise](https://rubygems.org/gems/devise/versions/4.2.0?locale=en)    | `bundle add devise`  | `4.2` |
 | [foreman](https://rubygems.org/gems/foreman/versions/0.87.2?locale=en) | `bundle add foreman` | `0.87.2`|
 | [redis](https://rubygems.org/gems/redis/versions/5.2.0?locale=en)      | `bundle add redis`   | `5.2` |
