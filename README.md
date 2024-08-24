@@ -70,6 +70,7 @@ Then into your app directory and run `echo "/ .env" >> .gitignore"`, this will e
 ### Rails Server
 
 Run: `bin/rails s` to start
-To start the server with foreman i recomend reading [this gide](http://blog.daviddollar.org/2011/05/06/introducing-foreman.html)
+
+- To start the server with foreman i recomend reading [this gide](http://blog.daviddollar.org/2011/05/06/introducing-foreman.html)
 
 ///// construction in progress /////
