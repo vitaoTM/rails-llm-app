@@ -4,7 +4,7 @@ class MessagesController < ApplicationController
     role = @chat.messages.any? ? 'user' : 'system'
     @message = @chat.messages.create!(message_params.merge(role: role))
 
-    OpenaiResponseJob.perform_later(@chat.id)
+    OllamaResponseJob.perform_later(@message.chat_id)
 
     respond_to do |format|
       format.turbo_stream
