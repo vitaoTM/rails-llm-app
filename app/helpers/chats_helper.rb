@@ -1,7 +1,7 @@
 module ChatsHelper
   def list_name(chat)
-    if chat.q_and_a.present?
-      chat.q_and_a.first[0].truncate[20]
+    if chat.messages.present?
+      chat.messages.first.content[0..20]
     else
       "Chat #{chat.id}"
     end
