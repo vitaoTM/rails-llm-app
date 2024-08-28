@@ -24,10 +24,16 @@
           </div>
 
           <div class="mt-3">
-            <h5>Today:</h5>
+            <%# <h5>Today:</h5> %>
             <turbo-frame id="user-chats">
               <%= render partial: 'chats/chat_list', collection: current_user.chats.reverse if current_user.present? %>
             </turbo-frame>
+          </div>
+
+          <div style="position: fixed; bottom: 0; left: 0; padding: 10px;">
+            <% if signed_in? %>
+              <%= button_to 'Sign out', destroy_user_session_path, method: :delete, class:"form-control" %>
+            <% end %>
           </div>
 
         </div>
