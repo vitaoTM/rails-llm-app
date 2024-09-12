@@ -2,8 +2,9 @@
 
 This project is an attempt to develop a chatbot app, using Ruby on Rails and an API call from a Large Language Model such as OpenAI (ChtGTP) and Meta (Ollama)
 <div align="center">
-  <img src="https://static.vecteezy.com/system/resources/previews/021/059/827/non_2x/chatgpt-logo-chat-gpt-icon-on-white-background-free-vector.jpg" style="border-radius: 100px;" width="100">
-  <img src="https://pbs.twimg.com/card_img/1824542128049139712/SkziG_vX?format=png&name=medium" width="100">
+  <img src="https://static.vecteezy.com/system/resources/previews/021/059/827/non_2x/chatgpt-logo-chat-gpt-icon-on-white-background-free-vector.jpg" style="border-radius: 100px;" width="100" alt="open A.I. logo">
+  <img src="https://ollama.com/public/assets/c889cc0d-cb83-4c46-a98e-0d0e273151b9/42f6b28d-9117-48cd-ac0d-44baaf5c178e.png" width="100" style="background-color: white" alt="ollama A.I logo">
+
 </div>
 
 ### Versions utilized for this project:
