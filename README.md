@@ -34,6 +34,7 @@ This project is an attempt to develop a chatbot app, using Ruby on Rails and an 
 | [postgreSQL](https://rubygems.org/gems/pg/versions/1.5.6?locale=en)    | `bundle add pg`      | `1.5` |
 | [sidekiq](https://rubygems.org/gems/sidekiq/versions/7.1.2?locale=en)  | `bundle add sidekiq` | `7.1` |
 | [ruby-openAI](https://github.com/alexrudall/ruby-openai)               | `bundle add ruby-openai` | `7.1` |
+| [ollama-ai](https://github.com/gbaptista/ollama-ai)                    | `bundle add ollama-ai` | `1.3.0` |
 
 </div>
 
@@ -45,7 +46,7 @@ git clone https://github.com/your-username/chatbot-llm.git
 cd chatbot-llm
 ```
 
-### Install Dependencies 
+### Install Dependencies
 `bundle install`
 
 ### Set up Data Base
@@ -69,7 +70,8 @@ Then into your app directory and run `echo "/ .env" >> .gitignore"`, this will e
 
 ### Rails Server
 
-Run: `bin/rails s` to start 
-To start the server with foreman i recomend reading [this gide](http://blog.daviddollar.org/2011/05/06/introducing-foreman.html)
+Run: `bin/rails s` to start
+
+- To start the server with foreman i recomend reading [this gide](http://blog.daviddollar.org/2011/05/06/introducing-foreman.html)
 
 ///// construction in progress /////
